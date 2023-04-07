@@ -1,3 +1,4 @@
+// Select elements from the HTML document
 const imagesContainer = document.querySelector(".grid");
 const searchInput = document.querySelector("#searchInput");
 const natureLink = document.querySelector("#nature-link");
@@ -7,8 +8,12 @@ const animalsLink = document.querySelector("#animals-link");
 const navLinks = document.querySelectorAll('.nav-link');
 const addForm = document.querySelector("#add-Form");
 
+
+// Function to render the photos to the page
 function renderPhotos(data) {
+// Initialize an empty string to hold the HTML for each photo
   let photos = '';
+// Loop through the data and create HTML for each photo
   data.forEach(pic => {
     photos += `
       <figure>
@@ -28,23 +33,28 @@ function renderPhotos(data) {
       </figure>
     `;
   });
-  imagesContainer.innerHTML = photos;
 
+   // Add the HTML to the images container in the DOM
+  imagesContainer.innerHTML = photos;
+// Add click event listeners to the edit buttons for each photo
   let editButtons = document.querySelectorAll(".edit");
   editButtons.forEach(button => {
     button.addEventListener("click", function(e) {
       e.preventDefault();
+      // Get the ID of the photo being edited
       const id = this.dataset.id;
+      // Get references to the various elements in the figure
       const figure = this.closest("figure");
       const imageEl= figure.querySelector("img")
       const nameEl = figure.querySelector("h4");
       const resolutionEl = figure.querySelector("h6");
       const descriptionEl = figure.querySelector("p");
+       // Prompt the user for updated information
       const newImage=prompt("Enter New Image",imageEl.textContent);
       const newName = prompt("Enter New Wallpaper Name", nameEl.textContent);
       const newResolution = prompt("Enter New Resolution", resolutionEl.textContent);
       const newDescription = prompt("Enter New Description", descriptionEl.textContent);
-      
+      // Send a PUT request to the server with the updated information
       if (newImage && newName && newResolution && newDescription) {
         fetch(`http://localhost:3000/wallpapers/${id}`, {
           method: "PUT",
@@ -65,6 +75,7 @@ function renderPhotos(data) {
           return response.json();
         })
         .then(data => {
+         // Update the elements in the DOM with the new information
           imageEl.textContent =newImage;
           nameEl.textContent = newName;
           resolutionEl.textContent = newResolution;
