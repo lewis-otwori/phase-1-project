@@ -130,6 +130,7 @@ h1 {
 
 
 form {
+  border: 1px;
   display: flex;
   flex-direction: column;
   max-width: 400px;
@@ -139,3 +140,31 @@ form {
   border-radius: 10px;
   box-shadow: 0px 0px 10px 1px rgba
 }
+#name{
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius:5px;
+  font-size: 16px;
+}
+
+label{
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#submitbtn{
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#submitbtn:hover{
+  background-color: #45a049;
+}
+
