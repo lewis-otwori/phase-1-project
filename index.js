@@ -15,11 +15,12 @@ function renderPhotos(data) {
         <img src="${pic.image_url}" class="border">
         <figcaption>
           <h4>${pic.name}</h4>
-          ${pic.resolution}
-          <h5>${pic.description}</h5>
+          <h6>${pic.resolution}</h6>
+          <p>${pic.description}</p>
         </figcaption>
         <div class="image-container">
           <button class="like">❤️</button>
+          <button class="edit" data-id="${pic.id}">edit</button>
           <a href="${pic.image_url}" download="${pic.name}">⬇️</a>
           <button class="delete" data-id="${pic.id}">Delete</button>
         </div>
@@ -28,6 +29,51 @@ function renderPhotos(data) {
   });
   imagesContainer.innerHTML = photos;
 
+  let editButtons = document.querySelectorAll(".edit");
+  editButtons.forEach(button => {
+    button.addEventListener("click", function(e) {
+      e.preventDefault();
+      const id = this.dataset.id;
+      const figure = this.closest("figure");
+      const imageEl= figure.querySelector("img")
+      const nameEl = figure.querySelector("h4");
+      const resolutionEl = figure.querySelector("h6");
+      const descriptionEl = figure.querySelector("p");
+      const newImage=prompt("Enter New Image",imageEl.textContent);
+      const newName = prompt("Enter New Wallpaper Name", nameEl.textContent);
+      const newResolution = prompt("Enter New Resolution", resolutionEl.textContent);
+      const newDescription = prompt("Enter New Description", descriptionEl.textContent);
+      
+      if (newImage && newName && newResolution && newDescription) {
+        fetch(`http://localhost:3000/wallpapers/${id}`, {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            image_url:newImage,
+            name: newName,
+            resolution: newResolution,
+            description: newDescription
+          })
+        })
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Error updating wallpaper');
+          }
+          return response.json();
+        })
+        .then(data => {
+          imageEl.textContent =newImage;
+          nameEl.textContent = newName;
+          resolutionEl.textContent = newResolution;
+          descriptionEl.textContent = newDescription;
+          console.log('Wallpaper updated');
+        })
+        .catch(error => console.error(error));
+      }
+    });
+  });
   let likeButtons = document.querySelectorAll(".like");
   likeButtons.forEach(button => {
     button.addEventListener("click", function() {
