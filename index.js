@@ -85,7 +85,7 @@ function renderPhotos(data) {
     const name = document.getElementById('name-input').value;
     const comment = document.getElementById('comment-input').value;
     const figure = event.target.closest('figure');
-    const id = figure.dataset.id;
+    //const id = figure.dataset.id;
   
     fetch(`http://localhost:3000/wallpapers/comments/${id}`, {
       method: 'POST',

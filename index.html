@@ -1,51 +1,51 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>Wallzone</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8"> <!-- Set the character encoding to UTF-8 -->
+    <title>Wallzone</title> <!-- Set the page title -->
+    <link rel="stylesheet" href="style.css"> <!-- Link to the CSS file -->
   </head>
   <body>
-    <h1>WALLZONE</h1>
-    <nav id="menu" class=".nav-link">
-      <ul class="horizontal-list">
-        <li><a href="#" data-filter="all" >All</a></li>
-        <li><a href="#nature-link" data-filter="nature">Nature</a></li>
-        <li><a href="#city-link" data-filter="city">City</a></li>
-        <li><a href="#abstract-link" data-filter="abstract">Abstract</a></li>
-        <li><a href="#animals-link" data-filter="animals">Animals</a></li>
+    <h1>WALLZONE</h1> <!-- Main heading of the page -->
+    <nav id="menu" class=".nav-link"> <!-- Navigation bar with unique id and class -->
+      <ul class="horizontal-list"> <!-- Unordered list with class for horizontal layout -->
+        <li><a href="#" data-filter="all" >All</a></li> <!-- Link to show all images -->
+        <li><a href="#nature-link" data-filter="nature">Nature</a></li> <!-- Link to filter by nature category -->
+        <li><a href="#city-link" data-filter="city">City</a></li> <!-- Link to filter by city category -->
+        <li><a href="#abstract-link" data-filter="abstract">Abstract</a></li> <!-- Link to filter by abstract category -->
+        <li><a href="#animals-link" data-filter="animals">Animals</a></li> <!-- Link to filter by animals category -->
       </ul>
     </nav>
-    <div class="search">
-      <input  id="searchInput"class="srch"type="text" name="search" placeholder="Search high-resolution images">
-      <a href="#"><button class="btn" type="submit">Search</button></a>
+    <div class="search"> <!-- Container for search bar -->
+      <input  id="searchInput"class="srch"type="text" name="search" placeholder="Search high-resolution images"> <!-- Search input field -->
+      <a href="#"><button class="btn" type="submit">Search</button></a> <!-- Search button -->
     </div>
-    <div class="grid"></div>
+    <div class="grid"></div> <!-- Container for high-resolution images -->
 
     <!-- Modal for adding images -->
-    <div id="addModal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>Add Image</h2>
-        <form id="add-Form">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name"><br>
+    <div id="addModal" class="modal"> <!-- Modal with unique id and class -->
+      <div class="modal-content"> <!-- Content of the modal -->
+        <span class="close">&times;</span> <!-- Close button for the modal -->
+        <h2>Add Image</h2> <!-- Heading for the add image section -->
+        <form id="add-Form"> <!-- Form for adding images -->
+          <label for="name">Name:</label> <!-- Label for the name input field -->
+          <input type="text" id="name" name="name"><br> <!-- Input field for the name of the image -->
 
-          <label for="category">Category:</label>
-          <select id="category" name="category">
-            <option value="nature">Nature</option>
-            <option value="city">City</option>
-            <option value="abstract">Abstract</option>
-            <option value="animals">Animals</option>
+          <label for="category">Category:</label> <!-- Label for the category select field -->
+          <select id="category" name="category"> <!-- Select field for choosing the category of the image -->
+            <option value="nature">Nature</option> <!-- Option for the nature category -->
+            <option value="city">City</option> <!-- Option for the city category -->
+            <option value="abstract">Abstract</option> <!-- Option for the abstract category -->
+            <option value="animals">Animals</option> <!-- Option for the animals category -->
           </select><br>
 
-          <label for="description">Description:</label>
-          <textarea id="description" name="description"></textarea><br>
+          <label for="description">Description:</label> <!-- Label for the description input field -->
+          <textarea id="description" name="description"></textarea><br> <!-- Input field for the description of the image -->
 
-          <label for="resolution">Resolution:</label>
-          <input type="text" id="resolution" name="resolution"><br>
+          <label for="resolution">Resolution:</label> <!-- Label for the resolution input field -->
+          <input type="text" id="resolution" name="resolution"><br> <!-- Input field for the resolution of the image -->
 
-          <label for="image_url">Image URL:</label>
+          <label for="image_url">Image URL:</label> <!-- Label for the image URL input field -->
           <input type="text" id="image_url" name="image_url"><br>
 
           <input type="submit" value="Submit" id="submitbtn">
@@ -63,3 +63,4 @@
     <script src="index.js"></script>
   </body>
 </html>
+
