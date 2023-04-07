@@ -1,0 +1,141 @@
+/* Set background color and font styles */
+body {
+  background-color: #F7F7F7;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the header */
+h1 {
+  color: #333333;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 1rem;
+}
+
+/* Style the navigation menu */
+#menu {
+  background-color: #ffa500;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.horizontal-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.horizontal-list li {
+  margin-right: 1rem;
+}
+
+.horizontal-list li a {
+  color: #F7F7F7;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 30px;
+  list-style: none;
+  margin-left: 62px;
+  margin-top: 27px;
+  transition: 0.4s ease-in-out;
+}
+
+.horizontal-list li a:hover {
+  color: #333333;
+}
+
+.horizontal-list li a:hover {
+  text-decoration: underline;
+}
+
+/* Style the search bar and button */
+.search {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.srch {
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  width: 70%;
+  margin-right: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.srch:focus {
+  outline: none;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn {
+  background-color: #333333;
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #0055CC;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #F7F7F7;
+  color: #333333;
+}
+
+.border {
+  border: 2px solid black;
+  background-color: white;
+  width: 300px;
+  height: 200px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 0.1rem;
+}
+
+.grid img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.grid img:hover {
+  transform: scale(1.2);
+}
+
+#like {
+  width: 9%;
+  height: auto;
+  top: 0;
+  left: 0;
+}
+
+#download {
+  width: 7%;
+  height: auto;
+  top: 0;
+  left: 0;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 1px rgba
+}

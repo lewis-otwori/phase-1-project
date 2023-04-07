@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Wallzone</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>WALLZONE</h1>
+    <nav id="menu" class=".nav-link">
+      <ul class="horizontal-list">
+        <li><a href="#" data-filter="all" >All</a></li>
+        <li><a href="#nature-link" data-filter="nature">Nature</a></li>
+        <li><a href="#city-link" data-filter="city">City</a></li>
+        <li><a href="#abstract-link" data-filter="abstract">Abstract</a></li>
+        <li><a href="#animals-link" data-filter="animals">Animals</a></li>
+      </ul>
+    </nav>
+    <div class="search">
+      <input  id="searchInput"class="srch"type="text" name="search" placeholder="Search high-resolution images">
+      <a href="#"><button class="btn" type="submit">Search</button></a>
+    </div>
+    <div class="grid"></div>
+
+    <!-- Modal for adding images -->
+    <div id="addModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Add Image</h2>
+        <form id="add-Form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name"><br>
+
+          <label for="category">Category:</label>
+          <select id="category" name="category">
+            <option value="nature">Nature</option>
+            <option value="city">City</option>
+            <option value="abstract">Abstract</option>
+            <option value="animals">Animals</option>
+          </select><br>
+
+          <label for="description">Description:</label>
+          <textarea id="description" name="description"></textarea><br>
+
+          <label for="resolution">Resolution:</label>
+          <input type="text" id="resolution" name="resolution"><br>
+
+          <label for="image_url">Image URL:</label>
+          <input type="text" id="image_url" name="image_url"><br>
+
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

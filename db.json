@@ -1,0 +1,211 @@
+{
+  "wallpapers": [
+    {
+      "id": 1,
+      "name": "Mountains",
+      "description": "A stunning view of snow-capped mountains",
+      "image_url": "https://images.pexels.com/photos/4215113/pexels-photo-4215113.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "tags": [
+        "mountains",
+        "snow",
+        "landscape"
+      ],
+      "resolution": "1920x1080",
+      "likes": 1,
+      "category": "nature"
+    },
+    {
+      "id": 2,
+      "name": "Cityscape",
+      "description": "A panoramic view of the city skyline at night",
+      "image_url": "https://images.unsplash.com/photo-1524313071836-4bd44e8a2a95?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+      "tags": [
+        "city",
+        "night",
+        "landscape"
+      ],
+      "resolution": "2560x1440",
+      "likes": 1,
+      "category": "city"
+    },
+    {
+      "id": 3,
+      "name": "Beach",
+      "description": "A serene view of a tropical beach",
+      "image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80",
+      "tags": [
+        "beach",
+        "tropical",
+        "landscape"
+      ],
+      "resolution": "3840x2160",
+      "likes": 11,
+      "category": "nature"
+    },
+    {
+      "id": 4,
+      "name": "Forest",
+      "description": "A peaceful view of a forest with a river",
+      "image_url": "https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "tags": [
+        "forest",
+        "river",
+        "landscape"
+      ],
+      "resolution": "1920x1080",
+      "likes": 1,
+      "category": "nature"
+    },
+    {
+      "id": 5,
+      "name": "Sunset",
+      "description": "A breathtaking view of a sunset on the beach",
+      "image_url": "https://images.unsplash.com/photo-1588001832198-c15cff59b078?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+      "tags": [
+        "sunset",
+        "beach",
+        "landscape"
+      ],
+      "resolution": "2560x1440",
+      "likes": 1,
+      "category": "nature"
+    },
+    {
+      "id": 6,
+      "name": "Space",
+      "description": "An awe-inspiring view of outer space",
+      "image_url": "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1513&q=80",
+      "tags": [
+        "space",
+        "universe",
+        "cosmos"
+      ],
+      "resolution": "3840x2160",
+      "likes": 1
+    },
+    {
+      "id": 7,
+      "name": "Road",
+      "description": "A beautiful view of a winding road through the mountains",
+      "image_url": "https://images.unsplash.com/photo-1519817914152-22d216bb9170?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80",
+      "tags": [
+        "road",
+        "mountains",
+        "landscape"
+      ],
+      "resolution": "1920x1080",
+      "likes": 1
+    },
+    {
+      "id": 8,
+      "name": "Waterfall",
+      "description": "A stunning view of a waterfall in a lush green forest",
+      "image_url": "https://plus.unsplash.com/premium_photo-1669750819932-03696f881cfe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80",
+      "tags": [
+        "waterfall",
+        "forest",
+        "landscape"
+      ],
+      "resolution": "2560x1440",
+      "likes": 1
+    },
+    {
+      "id": 9,
+      "name": "Desert",
+      "description": "An exotic view of a desert landscape",
+      "image_url": "https://images.unsplash.com/photo-1566132127168-ebf1e17c5599?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "tags": [
+        "desert",
+        "sand",
+        "landscape"
+      ],
+      "resolution": "3840x2160",
+      "likes": 1
+    },
+    {
+      "id": 10,
+      "name": "Ocean Sunset",
+      "description": "A stunning sunset over the ocean",
+      "image_url": "https://images.unsplash.com/photo-1536373766806-c56c9acd7fd5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
+      "tags": [
+        "ocean",
+        "sunset",
+        "nature"
+      ],
+      "resolution": "3840x2160",
+      "likes": 1
+    },
+    {
+      "id": 11,
+      "name": "Lion",
+      "description": "A powerful lion in the wild",
+      "image_url": "https://images.unsplash.com/photo-1543682704-15adeb008ac4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=696&q=80",
+      "tags": [
+        "lion",
+        "wildlife",
+        "safari"
+      ],
+      "resolution": "3840x2160",
+      "likes": 1
+    },
+    {
+      "id": 21,
+      "name": "Giraffe",
+      "description": "A beautiful giraffe in its natural habitat",
+      "image_url": "https://images.unsplash.com/photo-1647687646722-f4bdd214c725?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "tags": [
+        "giraffe",
+        "wildlife",
+        "safari"
+      ],
+      "resolution": "3840x2160",
+      "likes": 1
+    },
+    {
+      "id": 12,
+      "name": "Elephant",
+      "description": "A majestic elephant in the savannah",
+      "image_url": "https://images.unsplash.com/photo-1603483080228-04f2313d9f10?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80",
+      "tags": [
+        "elephant",
+        "wildlife",
+        "safari"
+      ],
+      "resolution": "3840x2160",
+      "likes": null
+    },
+    {
+      "id": 13,
+      "name": "Colorful Shapes",
+      "description": "A vibrant and colorful abstract composition of geometric shapes",
+      "image_url": "https://images.unsplash.com/photo-1605106325682-3482f7c1c9c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=663&q=80",
+      "tags": [
+        "abstract",
+        "colorful",
+        "geometric"
+      ],
+      "resolution": "3840x2160"
+    },
+    {
+      "id": 14,
+      "name": "Neon Lights",
+      "description": "An abstract composition of neon lights in the dark",
+      "image_url": "https://plus.unsplash.com/premium_photo-1674670903952-016050c24e40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+      "tags": [
+        "abstract",
+        "neon",
+        "lights"
+      ],
+      "resolution": "3840x2160",
+      "likes": 1
+    },
+    {
+      "name": "Dog",
+      "image_url": "https://images.unsplash.com/photo-1679678691014-eba529defb2c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80",
+      "category": "animals",
+      "resolution": "3840x2160",
+      "description": "A cute Dog",
+      "id": 22
+    }
+  ]
+}
