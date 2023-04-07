@@ -12,14 +12,16 @@
       ],
       "resolution": "1920x1080",
       "likes": 1,
-      "category": "nature"
+      "category": "nature",
+      "comment":""
     },
     {
       "image_url": "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1544&q=80",
       "name": "NairobiCity",
       "resolution": "3840*2160",
       "description": "Cool city",
-      "id": 2
+      "id": 2,
+      "comment":""
     },
     {
       "id": 3,
@@ -33,7 +35,8 @@
       ],
       "resolution": "3840x2160",
       "likes": 11,
-      "category": "nature"
+      "category": "nature",
+      "comment":""
     },
     {
       "id": 4,
@@ -47,7 +50,8 @@
       ],
       "resolution": "1920x1080",
       "likes": 1,
-      "category": "nature"
+      "category": "nature",
+      "comment":""
     },
     {
       "id": 5,
@@ -61,7 +65,8 @@
       ],
       "resolution": "2560x1440",
       "likes": 1,
-      "category": "nature"
+      "category": "nature",
+      "comment":""
     },
     {
       "id": 6,
@@ -74,7 +79,8 @@
         "cosmos"
       ],
       "resolution": "3840x2160",
-      "likes": 1
+      "likes": 1,
+      "comment":""
     },
     {
       "id": 7,
@@ -87,7 +93,8 @@
         "landscape"
       ],
       "resolution": "1920x1080",
-      "likes": 1
+      "likes": 1,
+      "comment":""
     },
     {
       "id": 8,
@@ -100,7 +107,8 @@
         "landscape"
       ],
       "resolution": "2560x1440",
-      "likes": 1
+      "likes": 1,
+      "comment":""
     },
     {
       "id": 9,
@@ -113,7 +121,8 @@
         "landscape"
       ],
       "resolution": "3840x2160",
-      "likes": 1
+      "likes": 1,
+      "comment":""
     },
     {
       "id": 10,
@@ -126,7 +135,8 @@
         "nature"
       ],
       "resolution": "3840x2160",
-      "likes": 1
+      "likes": 1,
+      "comment":""
     },
     {
       "id": 11,
@@ -139,7 +149,8 @@
         "safari"
       ],
       "resolution": "3840x2160",
-      "likes": 1
+      "likes": 1,
+      "comment":""
     },
     {
       "id": 21,
@@ -152,7 +163,8 @@
         "safari"
       ],
       "resolution": "3840x2160",
-      "likes": 1
+      "likes": 1,
+      "comment":""
     },
     {
       "id": 12,
@@ -165,7 +177,8 @@
         "safari"
       ],
       "resolution": "3840x2160",
-      "likes": null
+      "likes": 1,
+      "comment":""
     },
     {
       "id": 13,
@@ -177,7 +190,8 @@
         "colorful",
         "geometric"
       ],
-      "resolution": "3840x2160"
+      "resolution": "3840x2160",
+      "comment":""
     },
     {
       "id": 14,
@@ -190,7 +204,8 @@
         "lights"
       ],
       "resolution": "3840x2160",
-      "likes": 1
+      "likes": 1,
+      "comment":""
     },
     {
       "name": "Dog",
@@ -198,7 +213,8 @@
       "category": "animals",
       "resolution": "3840x2160",
       "description": "A cute Dog",
-      "id": 22
+      "id": 22,
+      "comment":""
     }
   ]
 }

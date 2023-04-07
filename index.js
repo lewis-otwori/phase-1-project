@@ -24,6 +24,7 @@ function renderPhotos(data) {
           <a href="${pic.image_url}" download="${pic.name}">⬇️</a>
           <button class="delete" data-id="${pic.id}">Delete</button>
         </div>
+        <div class="comments-container"></div>
       </figure>
     `;
   });
@@ -74,6 +75,51 @@ function renderPhotos(data) {
       }
     });
   });
+
+  const commentForm = document.getElementById('comment-form');
+  commentForm.addEventListener('submit', handleCommentSubmit);
+
+  function handleCommentSubmit(event) {
+    event.preventDefault();
+  
+    const name = document.getElementById('name-input').value;
+    const comment = document.getElementById('comment-input').value;
+    const figure = event.target.closest('figure');
+    const id = figure.dataset.id;
+  
+    fetch(`http://localhost:3000/wallpapers/comments/${id}`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        name: name,
+        comment: comment
+      })
+    })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Error submitting comment');
+      }
+      return response.json();
+    })
+    .then(data => {
+      const commentsContainer = figure.querySelector('.comments-container');
+      const commentEl = document.createElement('div');
+      commentEl.innerHTML = `
+        <p><strong>${data.name}:</strong> ${data.comment}</p>
+      `;
+      commentsContainer.appendChild(commentEl);
+      console.log('Comment submitted');
+    })
+    .catch(error => console.error(error));
+  
+    // Clear the form
+    document.getElementById('name-input').value = '';
+    document.getElementById('comment-input').value = '';
+  }
+  
+
   let likeButtons = document.querySelectorAll(".like");
   likeButtons.forEach(button => {
     button.addEventListener("click", function() {
